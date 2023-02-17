@@ -65,6 +65,8 @@ class Draggable {
       this.diff.y = e.clientY - this.lastPointerMove.y;
       this.lastPointerMove.x = e.clientX;
       this.lastPointerMove.y = e.clientY;
+      // this.clone.x + this.diff.x < 255
+      // 可以在这里限制边界
 
       this.clone.x += this.diff.x;
       this.clone.y += this.diff.y;
